@@ -76,7 +76,7 @@ void RenderProject::initFunction()
 	bRenderer().getObjects()->createTexture("fbo_texture2", 0.f, 0.f);	// create texture to bind to the fbo
 	ShaderPtr blurShader = bRenderer().getObjects()->loadShaderFile("blurShader", 0, false, false, false, false, false);			// load shader that blurs the texture
 	MaterialPtr blurMaterial = bRenderer().getObjects()->createMaterial("blurMaterial", blurShader);								// create an empty material to assign either texture1 or texture2 to
-	bRenderer().getObjects()->createSprite("images/blurSprite", blurMaterial);																// create a sprite using the material created above
+    bRenderer().getObjects()->createSprite("blurSprite", blurMaterial);																// create a sprite using the material created above
 
 	// Update render queue
 	updateRenderQueue("camera", 0.0f);
@@ -119,7 +119,13 @@ void RenderProject::loopFunction(const double &deltaTime, const double &elapsedT
 			bRenderer().getObjects()->getMaterial("blurMaterial")->setTexture("fbo_texture", bRenderer().getObjects()->getTexture(b ? "fbo_texture1" : "fbo_texture2"));
 			bRenderer().getObjects()->getMaterial("blurMaterial")->setScalar("isVertical", static_cast<GLfloat>(b));
 			// draw
-			bRenderer().getModelRenderer()->drawModel(bRenderer().getObjects()->getModel("blurSprite"), modelMatrix, _viewMatrixHUD, vmml::Matrix4f::IDENTITY, std::vector<std::string>({}), false);
+            bRenderer().getModelRenderer()->drawModel(
+                        bRenderer().getObjects()->getModel("blurSprite"),
+                        modelMatrix,
+                        _viewMatrixHUD,
+                        vmml::Matrix4f::IDENTITY,
+                        std::vector<std::string>({}),
+                        false);
 			b = !b;
 		}
 	

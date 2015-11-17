@@ -1,5 +1,7 @@
-### OSX
+build/*
+install/*
 
+### OSX
 .DS_Store
 .AppleDouble
 .LSOverride

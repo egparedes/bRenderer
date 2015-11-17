@@ -87,7 +87,7 @@ void Geometry::clearInstances()
 Geometry::VertexDataPtr Geometry::allocVertexData(size_t nVertices)
 {
     _nVertices  = nVertices;
-    _vertexData = VertexDataPtr(new Vertex[_nVertices]);
+    _vertexData = VertexDataPtr(new Vertex[_nVertices], [](Vertex* ptr){ delete[] ptr; });
     
     return _vertexData;
 }
@@ -95,7 +95,7 @@ Geometry::VertexDataPtr Geometry::allocVertexData(size_t nVertices)
 Geometry::IndexDataPtr Geometry::allocIndexData(size_t nIndices)
 {
     _nIndices  = nIndices;
-    _indexData = IndexDataPtr(new GLushort[_nIndices]);
+    _indexData = IndexDataPtr(new GLushort[_nIndices], [](GLushort* ptr){ delete[] ptr; });
     
     return _indexData;
 }

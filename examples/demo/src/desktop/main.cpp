@@ -14,8 +14,8 @@ int main(void)
 	project->init();
 	delete project;
 
-	std::cout << "press ENTER to quit" << std::endl;
-	std::cin.ignore();
+	// std::cout << "press ENTER to quit" << std::endl;
+	// std::cin.ignore();
 
 	return 0;
 }
