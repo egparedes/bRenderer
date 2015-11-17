@@ -1,8 +1,8 @@
-#include "headers/OSdetect.h"
+#include <bRenderer/OSdetect.h>
 
 #ifdef B_OS_DESKTOP
 
-#include "headers/View.h"
+#include <bRenderer/View.h>
 
 /* Constructor and destructor */
 View::View()

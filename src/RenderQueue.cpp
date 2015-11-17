@@ -1,4 +1,4 @@
-#include "headers/RenderQueue.h"
+#include <bRenderer/RenderQueue.h>
 
 void RenderQueue::submitToRenderQueue(GLuint programID, const std::string &materialName, const std::string &drawableName, const std::string &instanceName, DrawablePtr drawable, GLfloat distanceToCamera, bool isTransparent, GLenum blendSfactor, GLenum blendDfactor)
 {

@@ -1,7 +1,7 @@
-#include "headers/OBJLoader.h"
-#include "headers/Configuration.h"
-#include "headers/Logger.h"
-#include "headers/FileHandler.h"
+#include <bRenderer/OBJLoader.h>
+#include <bRenderer/Configuration.h>
+#include <bRenderer/Logger.h>
+#include <bRenderer/FileHandler.h>
 
 void OBJLoader::info_callback(const std::string& filename, std::size_t line_number, const std::string& message)
 {

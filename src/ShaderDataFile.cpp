@@ -1,11 +1,11 @@
 #include <string>
 #include <fstream>
 #include <iostream>
-#include "headers/ShaderDataFile.h"
-#include "headers/Logger.h"
-#include "headers/FileHandler.h"
-#include "headers/OSdetect.h"
-#include "headers/Configuration.h"
+#include <bRenderer/ShaderDataFile.h>
+#include <bRenderer/Logger.h>
+#include <bRenderer/FileHandler.h>
+#include <bRenderer/OSdetect.h>
+#include <bRenderer/Configuration.h>
 
 ShaderDataFile::ShaderDataFile(const std::string &shaderFileName, const std::string &shaderVersionDesktop, const std::string &shaderVersionES, GLuint maxLights, bool variableNumberOfLights, bool ambientLighting, bool diffuseLighting, bool specularLighting, bool cubicReflectionMap)
 	: _valid(true), _shaderVersionDesktop(shaderVersionDesktop), _shaderVersionES(shaderVersionES), _maxLights(maxLights), _variableNumberOfLights(variableNumberOfLights), _ambientLighting(ambientLighting), _diffuseLighting(diffuseLighting), _specularLighting(specularLighting), _cubicReflectionMap(cubicReflectionMap)

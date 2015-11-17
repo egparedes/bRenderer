@@ -1,5 +1,5 @@
-#include "headers/Camera.h"
-#include "headers/Configuration.h"
+#include <bRenderer/Camera.h>
+#include <bRenderer/Configuration.h>
 #include <cassert>
 
 /* Constructor and Destructor */

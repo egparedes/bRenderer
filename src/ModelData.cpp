@@ -1,8 +1,8 @@
 #include <map>
-#include "headers/ModelData.h"
-#include "external/obj_parser/obj_parser.hpp"
-#include "headers/FileHandler.h"
-#include "headers/OBJLoader.h"
+#include <bRenderer/ModelData.h>
+#include <obj.hpp>
+#include <bRenderer/FileHandler.h>
+#include <bRenderer/OBJLoader.h>
 
 ModelData::ModelData(const std::string &fileName, bool flipT, bool flipZ)
 	: _objLoader(new OBJLoader(this,

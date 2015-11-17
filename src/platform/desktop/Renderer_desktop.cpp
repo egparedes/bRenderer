@@ -1,9 +1,9 @@
-#include "headers/OSdetect.h"
+#include <bRenderer/OSdetect.h>
 
 #ifdef B_OS_DESKTOP
 
-#include "headers/Renderer.h"
-#include "headers/IRenderProject.h"
+#include <bRenderer/Renderer.h>
+#include <bRenderer/IRenderProject.h>
 
 /* Public functions */
 

@@ -1,4 +1,4 @@
-#include "headers/OSdetect.h"
+#include <bRenderer/OSdetect.h>
 #ifdef B_OS_IOS
 
 #import <QuartzCore/QuartzCore.h>

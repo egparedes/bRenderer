@@ -1,4 +1,4 @@
-#include "headers/TextureData.h"
+#include <bRenderer/TextureData.h>
 
 TextureData::TextureData(const std::string &fileName)
 {

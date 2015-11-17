@@ -51,11 +51,11 @@ void RenderProject::initFunction()
 
 	// create sprites
 	bRenderer().getObjects()->createSprite("flame", flameMaterial, false, flameProperties);				// create a sprite using the material created above, to pass additional properties a Properties object is used
-	bRenderer().getObjects()->createSprite("sparks", "sparks.png");										// create a sprite displaying sparks as a texture
-	bRenderer().getObjects()->createSprite("bTitle", "basicTitle_light.png");							// create a sprite displaying the title as a texture
+	bRenderer().getObjects()->createSprite("sparks", "images/sparks.png");										// create a sprite displaying sparks as a texture
+	bRenderer().getObjects()->createSprite("bTitle", "images/basicTitle_light.png");							// create a sprite displaying the title as a texture
 
 	// create text sprites
-	FontPtr font = bRenderer().getObjects()->loadFont("KozGoPro-ExtraLight.otf", 50);
+	FontPtr font = bRenderer().getObjects()->loadFont("fonts/KozGoPro-ExtraLight.otf", 50);
 	if (Input::isTouchDevice())
 		bRenderer().getObjects()->createTextSprite("instructions", vmml::Vector3f(1.f, 1.f, 1.f), "Double tap to start", font);
 	else
@@ -76,7 +76,7 @@ void RenderProject::initFunction()
 	bRenderer().getObjects()->createTexture("fbo_texture2", 0.f, 0.f);	// create texture to bind to the fbo
 	ShaderPtr blurShader = bRenderer().getObjects()->loadShaderFile("blurShader", 0, false, false, false, false, false);			// load shader that blurs the texture
 	MaterialPtr blurMaterial = bRenderer().getObjects()->createMaterial("blurMaterial", blurShader);								// create an empty material to assign either texture1 or texture2 to
-	bRenderer().getObjects()->createSprite("blurSprite", blurMaterial);																// create a sprite using the material created above
+	bRenderer().getObjects()->createSprite("images/blurSprite", blurMaterial);																// create a sprite using the material created above
 
 	// Update render queue
 	updateRenderQueue("camera", 0.0f);

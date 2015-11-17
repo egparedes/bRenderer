@@ -1,8 +1,8 @@
-#include "headers/ShaderDataGenerator.h"
-#include "headers/Logger.h"
-#include "headers/OSdetect.h"
-#include "headers/Configuration.h"
-#include "headers/ShaderSource.h"
+#include <bRenderer/ShaderDataGenerator.h>
+#include <bRenderer/Logger.h>
+#include <bRenderer/OSdetect.h>
+#include <bRenderer/Configuration.h>
+#include <bRenderer/ShaderSource.h>
 
 /* Public functions */
 

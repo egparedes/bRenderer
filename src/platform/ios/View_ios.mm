@@ -1,7 +1,7 @@
-#include "headers/OSdetect.h"
+#include <bRenderer/OSdetect.h>
 #ifdef B_OS_IOS
 
-#include "headers/View.h"
+#include <bRenderer/View.h>
 #include <vector>
 
 /* Constructor and destructor */

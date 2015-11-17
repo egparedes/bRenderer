@@ -1,5 +1,5 @@
-#include "headers/DepthMap.h"
-#include "headers/OSdetect.h"
+#include <bRenderer/DepthMap.h>
+#include <bRenderer/OSdetect.h>
 
 DepthMap::DepthMap(GLint width, GLint height)
 	: Texture()

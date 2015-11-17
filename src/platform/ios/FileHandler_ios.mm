@@ -1,8 +1,8 @@
-#include "headers/OSdetect.h"
+#include <bRenderer/OSdetect.h>
 #ifdef B_OS_IOS
 
-#include "headers/FileHandler.h"
-#include "headers/Logger.h"
+#include <bRenderer/FileHandler.h>
+#include <bRenderer/Logger.h>
 
 namespace bRenderer
 {

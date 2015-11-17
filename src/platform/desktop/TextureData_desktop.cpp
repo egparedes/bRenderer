@@ -1,10 +1,10 @@
-#include "headers/OSdetect.h"
+#include <bRenderer/OSdetect.h>
 
 #ifdef B_OS_DESKTOP
 
-#include "headers/TextureData.h"
-#include "bRenderer.h"
-#include "FreeImage.h"
+#include <bRenderer/TextureData.h>
+#include <bRenderer.h>
+#include <FreeImage.h>
 
 TextureData &TextureData::load(const std::string &fileName)
 {

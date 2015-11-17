@@ -1,6 +1,6 @@
-#include "headers/Sprite.h"
-#include "headers/Configuration.h"
-#include "headers/ObjectManager.h"
+#include <bRenderer/Sprite.h>
+#include <bRenderer/Configuration.h>
+#include <bRenderer/ObjectManager.h>
 
 Sprite::Sprite(MaterialPtr material, bool flipT, PropertiesPtr	properties)
 {

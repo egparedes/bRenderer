@@ -1,6 +1,6 @@
-#include "headers/Framebuffer.h"
-#include "headers/Logger.h"
-#include "headers/OSdetect.h"
+#include <bRenderer/Framebuffer.h>
+#include <bRenderer/Logger.h>
+#include <bRenderer/OSdetect.h>
 
 /* Constructors */
 

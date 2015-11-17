@@ -1,7 +1,7 @@
-#include "headers/TextSprite.h"
-#include "headers/Logger.h"
-#include "headers/FileHandler.h"
-#include "headers/ObjectManager.h"
+#include <bRenderer/TextSprite.h>
+#include <bRenderer/Logger.h>
+#include <bRenderer/FileHandler.h>
+#include <bRenderer/ObjectManager.h>
 
 /* Public Functions */
 

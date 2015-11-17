@@ -1,5 +1,5 @@
-#include "headers/ModelRenderer.h"
-#include "headers/Configuration.h"
+#include <bRenderer/ModelRenderer.h>
+#include <bRenderer/Configuration.h>
 
 /* Public functions */
 

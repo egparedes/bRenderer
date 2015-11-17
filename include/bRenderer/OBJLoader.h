@@ -4,11 +4,11 @@
 #include <unordered_map>
 #include <boost/bind.hpp>
 
+#include <obj.hpp>
+#include <vmmlib/matrix.hpp>
+
 #include "GeometryData.h"
 #include "ModelData.h"
-
-#include "vmmlib/matrix.hpp"
-#include "external/obj_parser/obj_parser.hpp"
 
 /** @brief Loads and processes OBJ models and materials.
 *	@author David Steiner, Benjamin Buergisser

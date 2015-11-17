@@ -1,9 +1,13 @@
-#include "bRenderer.h"
-#include "RenderProject.h"
+#include <bRenderer.h>
+#include "../RenderProject.h"
 
 int main(void)
 {
-	bRenderer::setStandardFilePath("project/data");
+#if (defined WIN32) || (defined _WIN32)
+	bRenderer::setStandardFilePath("./data");
+#else
+	bRenderer::setStandardFilePath("./data");
+#endif
 
 	// Create and initialize the RenderProject
 	RenderProject *project = new RenderProject();

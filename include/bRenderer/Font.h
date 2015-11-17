@@ -7,7 +7,7 @@
 #include "Renderer_GL.h"
 #include "Texture.h"
 
-#include "external/freetype-gl/freetype-gl.h"
+#include <freetype-gl.h>
 
 /** @brief A font that can be used to display text. Characters can be accessed through a single texture atlas.
 *	@author Benjamin Buergisser

@@ -1,7 +1,7 @@
-#include "headers/Logger.h"
-#include "headers/GeometryData.h"
-#include "headers/IShaderData.h"
-#include "headers/Shader.h"
+#include <bRenderer/Logger.h>
+#include <bRenderer/GeometryData.h>
+#include <bRenderer/IShaderData.h>
+#include <bRenderer/Shader.h>
 
 Shader::Shader(const IShaderData &shaderData)
 {

@@ -1,5 +1,5 @@
-#include "headers/CubeMap.h"
-#include "headers/TextureData.h"
+#include <bRenderer/CubeMap.h>
+#include <bRenderer/TextureData.h>
 
 CubeMap::CubeMap(const std::vector<TextureData> &data)
 	: Texture()

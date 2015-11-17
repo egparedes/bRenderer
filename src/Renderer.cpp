@@ -1,6 +1,6 @@
-#include "headers/Renderer.h"
-#include "headers/IRenderProject.h"
-#include "headers/Configuration.h"
+#include <bRenderer/Renderer.h>
+#include <bRenderer/IRenderProject.h>
+#include <bRenderer/Configuration.h>
 
 /* Public functions */
 

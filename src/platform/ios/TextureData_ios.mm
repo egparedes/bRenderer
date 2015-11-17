@@ -1,7 +1,7 @@
-#include "headers/OSdetect.h"
+#include <bRenderer/OSdetect.h>
 #ifdef B_OS_IOS
 
-#include "headers/TextureData.h"
+#include <bRenderer/TextureData.h>
 
 TextureData &TextureData::load(const std::string &fileName)
 {

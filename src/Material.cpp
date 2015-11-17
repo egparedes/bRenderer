@@ -1,6 +1,6 @@
-#include "headers/Material.h"
-#include "headers/ObjectManager.h"
-#include "headers/Configuration.h"
+#include <bRenderer/Material.h>
+#include <bRenderer/ObjectManager.h>
+#include <bRenderer/Configuration.h>
 
 void Material::initialize(ObjectManager *o, const MaterialData &materialData, ShaderPtr shader)
 {

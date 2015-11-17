@@ -1,4 +1,4 @@
-#include "headers/ShaderSource.h"
+#include <bRenderer/ShaderSource.h>
 
 namespace bRenderer
 {

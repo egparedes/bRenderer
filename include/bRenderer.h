@@ -2,14 +2,14 @@
 #define B_BRENDERER_H
 
 /* bRenderer includes */
-#include "headers/OSdetect.h"
-#include "headers/Renderer_GL.h"
-#include "headers/Logger.h"
-#include "headers/FileHandler.h"
-#include "headers/Renderer.h"
-#include "headers/IRenderProject.h"
+#include "bRenderer/OSdetect.h"
+#include "bRenderer/Renderer_GL.h"
+#include "bRenderer/Logger.h"
+#include "bRenderer/FileHandler.h"
+#include "bRenderer/Renderer.h"
+#include "bRenderer/IRenderProject.h"
 
 /* vmmlib includes */
-#include "vmmlib/util.hpp"
+#include <vmmlib/util.hpp>
 
 #endif /* defined(B_BRENDERER_H) */

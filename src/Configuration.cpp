@@ -1,7 +1,7 @@
-#include "headers/Configuration.h"
-#include "external/jsoncpp/json.h"
-#include "headers/Logger.h"
-#include "headers/FileHandler.h"
+#include <bRenderer/Configuration.h>
+#include <json/json.h>
+#include <bRenderer/Logger.h>
+#include <bRenderer/FileHandler.h>
 #include <fstream>
 
 namespace bRenderer

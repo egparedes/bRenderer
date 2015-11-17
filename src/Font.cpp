@@ -1,7 +1,7 @@
-#include "headers/Font.h"
-#include "headers/Logger.h"
-#include "headers/FileHandler.h"
-#include "headers/Configuration.h"
+#include <bRenderer/Font.h>
+#include <bRenderer/Logger.h>
+#include <bRenderer/FileHandler.h>
+#include <bRenderer/Configuration.h>
 
 Font::Font(const std::string &fontFileName, GLuint fontPixelSize)
 {

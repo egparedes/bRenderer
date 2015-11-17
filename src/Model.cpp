@@ -1,7 +1,7 @@
-#include "headers/Model.h"
-#include "headers/ModelData.h"
-#include "headers/TextureData.h"
-#include "headers/ObjectManager.h"
+#include <bRenderer/Model.h>
+#include <bRenderer/ModelData.h>
+#include <bRenderer/TextureData.h>
+#include <bRenderer/ObjectManager.h>
 
 Model::Model(ObjectManager *o, const ModelData &modelData, GLuint shaderMaxLights, bool variableNumberOfLights, bool shaderFromFile, bool ambientLighting, PropertiesPtr properties)
 	: _properties(properties)

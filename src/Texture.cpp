@@ -1,5 +1,5 @@
-#include "headers/Texture.h"
-#include "headers/TextureData.h"
+#include <bRenderer/Texture.h>
+#include <bRenderer/TextureData.h>
 
 Texture::Texture(const TextureData &data)
 {

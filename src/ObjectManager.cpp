@@ -1,6 +1,6 @@
-#include "headers/ObjectManager.h"
-#include "headers/ShaderDataFile.h"
-#include "headers/ShaderDataGenerator.h"
+#include <bRenderer/ObjectManager.h>
+#include <bRenderer/ShaderDataFile.h>
+#include <bRenderer/ShaderDataGenerator.h>
 
 /* Public functions */
 
